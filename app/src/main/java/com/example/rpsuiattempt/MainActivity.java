@@ -28,8 +28,8 @@ public class MainActivity extends AppCompatActivity {
         Typeface customFont = Typeface.createFromAsset(getAssets(),"fonts/KGHAPPYSolid.otf");
         TextView scoreboard = (TextView) findViewById(R.id.textView4);
         scoreboard.setTypeface(customFont);
-        EditText uc = (EditText) findViewById(R.id.editText2);
-        EditText cc = (EditText) findViewById(R.id.editText3);
+        TextView uc = (TextView) findViewById(R.id.textView);
+        TextView cc = (TextView) findViewById(R.id.textView2);
         cc.setTypeface(customFont);
         uc.setTypeface(customFont);
         Button ro= (Button) findViewById(R.id.button1);
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         if(a==2){
             TextView lol = findViewById(R.id.textView4);
             computer++;
-            lol.setText("computer wins"+ "\n" +  "Score= Computer: " + computer + " User: " + user);
+            lol.setText("computer wins"+ "\n" +  "Computer: " + computer + " User: " + user);
             ImageView user_choice = (ImageView) findViewById(R.id.imageView4);
             ImageView computer_choice = (ImageView) findViewById(R.id.imageView5);
             user_choice.setImageResource(R.drawable.rock);
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else if(a==1){
             TextView lol = findViewById(R.id.textView4);
-            lol.setText("draw" + "\n" +  "Score= Computer: " + computer + " User: " + user);
+            lol.setText("draw" + "\n" +  "Computer: " + computer + " User: " + user);
             ImageView user_choice = (ImageView) findViewById(R.id.imageView4);
             ImageView computer_choice = (ImageView) findViewById(R.id.imageView5);
             user_choice.setImageResource(R.drawable.rock);
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         else if(a==3){
             TextView lol = findViewById(R.id.textView4);
             user++;
-            lol.setText("you win"+"\n" +  "Score= Computer: " + computer + " User: " + user);
+            lol.setText("you win"+"\n" +  "Computer: " + computer + " User: " + user);
             ImageView user_choice = (ImageView) findViewById(R.id.imageView4);
             ImageView computer_choice = (ImageView) findViewById(R.id.imageView5);
             user_choice.setImageResource(R.drawable.rock);
@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
         if(a==3){
             TextView lol = findViewById(R.id.textView4);
             computer++;
-            lol.setText("computer wins"+ "\n" +  "Score= Computer: " + computer + " User: " + user);
+            lol.setText("computer wins"+ "\n" +  "Computer: " + computer + " User: " + user);
             ImageView user_choice = (ImageView) findViewById(R.id.imageView4);
             ImageView computer_choice = (ImageView) findViewById(R.id.imageView5);
             user_choice.setImageResource(R.drawable.paper);
@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else if(a==2){
             TextView lol = findViewById(R.id.textView4);
-            lol.setText("draw"+"\n" +  "Score= Computer: " + computer + " User: " + user);
+            lol.setText("draw"+"\n" +  "Computer: " + computer + " User: " + user);
             ImageView user_choice = (ImageView) findViewById(R.id.imageView4);
             ImageView computer_choice = (ImageView) findViewById(R.id.imageView5);
             user_choice.setImageResource(R.drawable.paper);
@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
         else if(a==1){
             TextView lol = findViewById(R.id.textView4);
             user++;
-            lol.setText("you win"+ "\n" +  "Score= Computer: " + computer + " User: " + user);
+            lol.setText("you win"+ "\n" +  "Computer: " + computer + " User: " + user);
             ImageView user_choice = (ImageView) findViewById(R.id.imageView4);
             ImageView computer_choice = (ImageView) findViewById(R.id.imageView5);
             user_choice.setImageResource(R.drawable.paper);
@@ -144,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
         if(a==1){
             TextView lol = findViewById(R.id.textView4);
             computer++;
-            lol.setText("computer wins"+ "\n" +  "Score= Computer: " + computer + " User: " + user);
+            lol.setText("computer wins"+ "\n" +  "Computer: " + computer + " User: " + user);
             ImageView user_choice = (ImageView) findViewById(R.id.imageView4);
             ImageView computer_choice = (ImageView) findViewById(R.id.imageView5);
             user_choice.setImageResource(R.drawable.scissors);
@@ -152,7 +152,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else if(a==3){
             TextView lol = findViewById(R.id.textView4);
-            lol.setText("draw"+ "\n" +  "Score= Computer: " + computer + " User: " + user);
+            lol.setText("draw"+ "\n" +  "Computer: " + computer + " User: " + user);
             ImageView user_choice = (ImageView) findViewById(R.id.imageView4);
             ImageView computer_choice = (ImageView) findViewById(R.id.imageView5);
             user_choice.setImageResource(R.drawable.scissors);
@@ -161,7 +161,7 @@ public class MainActivity extends AppCompatActivity {
         else if(a==2){
             TextView lol = findViewById(R.id.textView4);
             user++;
-            lol.setText("you win"+ "\n" +  "Score= Computer: " + computer + " User: " + user);
+            lol.setText("you win"+ "\n" +  "Computer: " + computer + " User: " + user);
             ImageView user_choice = (ImageView) findViewById(R.id.imageView4);
             ImageView computer_choice = (ImageView) findViewById(R.id.imageView5);
             user_choice.setImageResource(R.drawable.scissors);
